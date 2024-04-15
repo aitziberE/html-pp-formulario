@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+   <html lang="es">
+
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Formularios</title>
+      </head>
+      <body>
+         <section id="formularioAdmision">
+            <h1>Formulario de admisión Entrepenes</h1>
+            <form action="/action_page.php">
+                  <fieldset>
+                     <legend>El club viejuner</legend>
+                     <div>
+                        <label for="fNombre">Nombre:</label>
+                        <input type="text" id="fNombre" name="fNombre" placeholder="Ingrese su nombre">
+                     </div>
+                     <div>
+                        <label for="fApellidos">Apellidos:</label>
+                        <input type="text" id="fApellidos" name="fApellidos" placeholder="Ingrese sus apellidos">
+                     </div>
+                     <div>
+                        <label for="fEdad">Edad:</label>
+                        <input type="number" id="fEdad" name="fEdad" min="0" max="100">
+                     </div>
+                     <div>
+                        Sexo:
+                        <label for="sexo">h</label>
+                        <input type="radio" id="sexoH" name="sexo" value="h">
+                        <label for="sexo">m</label>
+                        <input type="radio" id="sexoM" name="sexo" value="m">
+                        <label for="sexo">otro</label>
+                        <input type="radio" id="sexoO" name="sexo" value="otro">
+                     </div>
+                     <div>
+                        <label for="viejuner">Me siento viejuner:</label>
+                        <select id="viejuner" name="viejuner">
+                              <option value="si">si</option>
+                              <option value="no">no</option>
+                        </select>
+                     </div>
+                     <div>
+                        <textarea name="sobreTi" rows="1" cols="30" placeholder="Escribe algo sobre tí:"></textarea>
+                     </div>
+                  </fieldset>
+         
+                  <fieldset>
+                     <legend>Tus circunstancias:</legend>
+                     <div>
+                        <label for="fCorreo">Correo electrónico:</label>
+                        <input type="email" id="fCorreo" name="fCorreo" placeholder="correo@email.com">
+                     </div>
+                     <div>
+                        <label for="fTelefono">Teléfono:</label>
+                        <input type="tel" id="fTelefono" name="fTelefono" placeholder="678901234" pattern="[0-9]{9}">
+                     </div>
+                  </fieldset>
+                  <input type="submit" value="Enviar">
+            </form>
+         </section>
+         
+         <section id="formularioPolicia">
+            <h1>Los ladronzuelos de bicicletas</h1>
+            <form action="/action_page.php">
+                  <fieldset>
+                     <div>
+                        <label for="fDia">Día:</label>
+                        <input type="date" id="fDia" name="fDia">
+                     </div>
+                     <div>
+                        <label for="fHora">Hora:</label>
+                        <input type="time" id="fHora" name="fHora">
+                     </div>
+                     <div>
+                        <label for="fColor">Color de la bicicleta:</label>
+                        <input type="color" id="fColor" name="fColor">
+                     </div>
+                     <div>
+                        <label for="fPrecio">Rango de precio:</label>
+                        <input type="range" id="fPrecio" name="fPrecio" min="0" max="1000" step="10">
+                        </div>
+                     <div>
+                        <label for="fTipo">Tipo de bicicleta:</label>
+                        <select id="fTipo" name="fTipo" autofocus>
+                              <option value="paseo">paseo</option>
+
+                              <option value="montaña">montaña</option>
+                              <option value="carreras">carreras</option>
+                        </select>
+                     </div>
+
+                     <div>
+                        Accesorios:
+                        <input type="checkbox" id="ruedines" name="ruedines" value="ruedines">
+                        <label for="ruedines">Ruedines</label>
+
+                        <input type="checkbox" id="pegatinas" name="pegatinas" value="pegatinas">
+                        <label for="pegatinas">Pegatinas</label>
+                        
+                        <input type="checkbox" id="cestita" name="cestita" value="cestita">
+                        <label for="cestita">Cestita</label>
+
+                        <input type="checkbox" id="bombaDeAire" name="bombaDeAire" value="bombaDeAire">
+                        <label for="bombaDeAire">Bomba de aire</label>
+
+                        <input type="checkbox" id="timbre" name="timbre" value="timbre">
+                        <label for="timbre">Timbre</label>
+
+                        <input type="checkbox" id="foco" name="foco" value="foco">
+                        <label for="foco">Foco</label>
+                     </div>
+                        ¿Qué marca era?:
+                        <input list="marcas" name="marca">
+                        <datalist id="marcas" >
+                              <option value="specialized">
+                              <option value="trek">
+                              <option value="merida">
+                              <option value="scott">
+                              <option value="giant">
+                              <option value="cube">
+                              <option value="lapierre">
+                              <option value="orbea">
+                              <option value="cannondale">
+                              <option value="bmc">
+                              <option value="canyon">
+                              <option value="look">
+                              <option value="protek">
+                              <option value="megamo">
+                              <option value="pinarello">
+                              <option value="bianchi">
+                              <option value="bh">
+                              <option value="factor">
+                              <option value="ghost">
+                              <option value="cervélo">
+                              <option value="argon">
+                        </datalist>
+                  </fieldset>
+                  <input type="submit" value="Enviar">
+            </form>
+         </section>
+      </body>
+   </html>
